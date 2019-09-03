@@ -17,7 +17,7 @@
 
     <groupId>ru.mikhailin</groupId>
     <artifactId>petclinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>petclinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -37,6 +37,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
         </plugins>
