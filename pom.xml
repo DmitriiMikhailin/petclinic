@@ -44,6 +44,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/DmitriiMikhailin/petclinic.git</developerConnection>
-    </scm>
+      <tag>petclinic-0.0.2</tag>
+  </scm>
 
 </project>
