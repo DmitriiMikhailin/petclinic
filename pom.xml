@@ -17,7 +17,7 @@
 
     <groupId>ru.mikhailin</groupId>
     <artifactId>petclinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>petclinic</name>
     <description>Demo project for Spring Boot</description>
 
