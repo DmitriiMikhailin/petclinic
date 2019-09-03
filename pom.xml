@@ -17,7 +17,7 @@
 
     <groupId>ru.mikhailin</groupId>
     <artifactId>petclinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>petclinic</name>
     <description>Demo project for Spring Boot</description>
 
@@ -45,6 +45,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/DmitriiMikhailin/petclinic.git</developerConnection>
         <url>https://github.com/DmitriiMikhailin/petclinic.git</url>
-    </scm>
+      <tag>petclinic-0.0.3</tag>
+  </scm>
 
 </project>
