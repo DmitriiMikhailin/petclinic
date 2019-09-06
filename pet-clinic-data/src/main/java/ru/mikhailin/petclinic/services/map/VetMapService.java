@@ -1,11 +1,11 @@
 package ru.mikhailin.petclinic.services.map;
 
 import ru.mikhailin.petclinic.model.Vet;
-import ru.mikhailin.petclinic.services.CrudService;
+import ru.mikhailin.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Vet findById(Long id) {
         return super.findByID(id);

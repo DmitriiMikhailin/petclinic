@@ -1,11 +1,11 @@
 package ru.mikhailin.petclinic.services.map;
 
 import ru.mikhailin.petclinic.model.Owner;
-import ru.mikhailin.petclinic.services.CrudService;
+import ru.mikhailin.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerMapService extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Owner findById(Long id) {
@@ -30,5 +30,17 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner save(Owner owner) {
         return super.save(owner.getId(), owner);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        Set<Owner> set = super.findAll();
+        for (Owner owner : set) {
+            if (owner.getLastName().equals(lastName)) {
+                return owner;
+            }
+        }
+
+        return null;
     }
 }
